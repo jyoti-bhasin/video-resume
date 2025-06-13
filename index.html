@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechUprise: Video Resume Guide</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the TechUprise watermark */
+        .watermark-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.05; /* Very subtle */
+            pointer-events: none; /* Allows clicks to pass through */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .watermark-text {
+            font-size: 8rem; /* Large font size */
+            font-weight: 800; /* Extra bold */
+            color: #93c5fd; /* Light blue color for watermark */
+            transform: rotate(-45deg); /* Rotate for a dynamic look */
+            user-select: none; /* Prevent text selection */
+            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 10px, transparent 10px, transparent 20px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 20px 20px;
+        }
+        /* Custom colors for consistency */
+        .text-dark-blue {
+            color: #1a202c; /* A darker shade for headings */
+        }
+    </style>
+</head>
+<body class="antialiased bg-white text-gray-900 min-h-screen flex flex-col relative">
+
+    <!-- Watermark Overlay -->
+    <div class="watermark-overlay">
+        <span class="watermark-text">TechUprise</span>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:px-8 lg:px-12 relative z-10">
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 relative overflow-hidden">
+            <!-- Decorative shapes -->
+            <div class="absolute top-0 left-0 w-32 h-32 bg-purple-500 opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-48 h-48 bg-blue-500 opacity-20 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+
+            <!-- Product Name -->
+            <p class="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-2 leading-tight">
+                TechUprise: Interview Xpress 30
+            </p>
+            <!-- Tagline -->
+            <p class="text-lg sm:text-xl font-light mb-4 italic">
+                Stand Out in the Stack — Master Your Video Resume.
+            </p>
+            <!-- Guide Title -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
+                Video Resume Guide
+            </h1>
+
+            <div class="mt-6 flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
+                <img
+                  src="https://placehold.co/150x150/800080/FFFFFF?text=Video"
+                  alt="Video Icon"
+                  class="w-20 h-20 sm:w-24 sm:h-24 rounded-full shadow-md border-4 border-purple-300"
+                  onerror="this.onerror=null; this.src='https://placehold.co/150x150/800080/FFFFFF?text=Video';"
+                />
+                <p class="text-md sm:text-lg italic font-medium">
+                    Instantly set yourself apart in a stack of applications with a compelling video resume.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Create a Video Resume? -->
+        <section class="bg-blue-50 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-blue-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-purple-600 text-3xl">Why Create a Video Resume?</span>
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li class="flex items-start">
+                    <span class="mr-2 text-pink-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Show, don't tell:</strong> Demonstrates your communication, clarity, and confidence.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-pink-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Showcase soft skills:</strong> Especially important for client-facing or team-based roles.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-pink-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Boost recall:</strong> Recruiters remember faces and voices more than plain PDFs.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-pink-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Global edge:</strong> Particularly useful when applying for remote or international opportunities.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- What Makes a Good Video Resume? -->
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow-md mb-12 border border-gray-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-blue-600 text-3xl">What Makes a Good Video Resume?</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2 flex items-center">
+                        Duration
+                    </h3>
+                    <p class="text-gray-700">Keep it <strong class="text-blue-800">60–90 seconds max</strong>.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2 flex items-center">
+                        Setup
+                    </h3>
+                    <p class="text-gray-700">Use a <strong class="text-blue-800">neutral background</strong>, natural light, good mic.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2 flex items-center">
+                        Dress Code
+                    </h3>
+                    <p class="text-gray-700">Wear neat, job-appropriate clothes.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2 flex items-center">
+                        Body Language
+                    </h3>
+                    <p class="text-gray-700">Smile, maintain eye contact, and be enthusiastic.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2 flex items-center">
+                        Clarity
+                    </h3>
+                    <p class="text-gray-700">Speak slowly and clearly; avoid jargon.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suggested Structure (Format) -->
+        <section class="bg-purple-50 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-purple-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-pink-600 text-3xl">Suggested Structure (Format)</span>
+            </h2>
+            <p class="text-gray-700 mb-4">Break your video into 5 key parts:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Quick Introduction:</strong> Name, location, education.
+                        <br>👉 <em class="text-gray-600">“Hi, I’m Aditi Sharma, a final-year Computer Science student at IIIT Hyderabad…”</em></p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Skills & Achievements:</strong> Mention 2-3 core strengths, tools, or highlights.
+                        <br>👉 <em class="text-gray-600">“I specialize in full-stack web development, with experience in React, Node.js, and MongoDB…”</em></p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Projects / Internship Wins:</strong> Pick 1–2 impactful contributions.
+                        <br>👉 <em class="text-gray-600">“I built a resume screening tool using GPT-3 that’s now being used by 3 HR teams…”</em></p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">What You’re Looking For:</strong> State the role and company types you're targeting.
+                        <br>👉 <em class="text-gray-600">“I’m currently seeking a Frontend Developer internship at a product-based startup…”</em></p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p><strong class="text-blue-800">Sign Off with Call to Action:</strong> Warm and polite close.
+                        <br>👉 <em class="text-gray-600">“Thank you for watching – excited to connect and explore relevant opportunities!”</em></p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Natural Script Template -->
+        <section class="bg-blue-50 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-blue-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-purple-600 text-3xl">Natural Script Template</span>
+            </h2>
+            <div class="bg-white p-4 rounded-md shadow-inner text-gray-800 italic">
+                <p>Hi, I’m [Your Name], a [Year] student at [University/College].</p>
+                <p class="mt-2">I’ve worked on [1-2 Projects] and interned at [Company Name] where I [did what?].</p>
+                <p class="mt-2">I’m skilled in [Tech Stack] and currently looking for [Role] opportunities.</p>
+                <p class="mt-2">I love building [something you're passionate about], and I’m excited to contribute to fast-moving, innovative teams.</p>
+                <p class="mt-2">Thank you for your time – feel free to connect with me!</p>
+            </div>
+        </section>
+
+        <!-- Recording Tips -->
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow-md mb-12 border border-gray-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-pink-600 text-3xl">Recording Tips</span>
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p>Use your phone or laptop camera (landscape mode is preferred).</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p>Sit in front of a bright window or lamp for good lighting.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p>Sit straight or stand – avoid slouching.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p>Ensure audio is clear – you can use your earphones’ mic.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p>Clear your background of distractions.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5"></span>
+                    <p>Record multiple takes and pick the best one.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Tools to Enhance Your Video -->
+        <section class="bg-purple-50 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-purple-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-blue-600 text-3xl">Tools to Enhance Your Video</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Script Practice:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>BigSpeak</li>
+                        <li>CuePrompter</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Video Editing:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><strong class="text-blue-800">Mobile:</strong> CapCut, InShot, VN Editor</li>
+                        <li><strong class="text-blue-800">Desktop:</strong> Canva, iMovie, Clipchamp</li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Subtitles (auto-gen):</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>VEED.io</li>
+                        <li>CapCut</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Tips -->
+        <section class="bg-pink-50 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-pink-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-purple-600 text-3xl">Pro Tips</span>
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p>Don’t read like a robot. Use the script as a base, but sound <strong class="text-blue-800">natural</strong>.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p>Don’t worry about accent or camera quality. <strong class="text-blue-800">Clarity > Fancy edits</strong>.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p>Add your LinkedIn, GitHub, or portfolio links in the video description.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-600 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p>Add keywords from your ideal job roles to help with discoverability on LinkedIn/YouTube.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Bonus: When to Use a Video Resume -->
+        <section class="bg-blue-100 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-blue-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-4 flex items-center">
+                <span class="mr-2 text-purple-600 text-3xl">When to Use a Video Resume</span>
+            </h2>
+            <p class="text-gray-700 mb-3">When applying to <strong class="text-blue-800">startups</strong>, <strong class="text-blue-800">international internships</strong>, <strong class="text-blue-800">remote jobs</strong>, or <strong class="text-blue-800">roles with hundreds of applicants</strong>.</p>
+            <p class="text-gray-700 font-semibold mb-2">Great for:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>SDE / Frontend / Full Stack roles</li>
+                <li>Data Analysts showcasing storytelling</li>
+                <li>Product roles or EdTech jobs</li>
+            </ul>
+            <p class="text-gray-700 mt-3 italic">Attach it to your resume or LinkedIn DM or even email as “My quick intro in 60 seconds!”</p>
+        </section>
+
+
+        <!-- Dummy User ID Section (Not relevant for static HTML, but retained for consistency) -->
+        <div class="text-xs text-gray-500 text-center mt-12 p-2 bg-gray-100 rounded-md">
+            User ID: guide-viewer-id (This ID is for collaborative features and may vary across sessions)
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white p-4 text-center text-sm mt-8 shadow-inner">
+        &copy; <span id="current-year"></span> TechUprise Video Resume Guide
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set dynamic copyright year in footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            } else {
+                console.error("Element with ID 'current-year' not found in footer. Cannot set copyright year.");
+            }
+        });
+    </script>
+</body>
+</html>
